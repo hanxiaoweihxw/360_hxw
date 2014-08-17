@@ -1,0 +1,7 @@
+可采用top指令, 可以看到任务队列信息（包含时间，用户数和系统负载），活动、休息、停止的进程和任务，CPU利用率，内存信息及详细进程信息。
+
+#!/bin/bash
+filename=date +%H%M%S
+echo $filename
+echo "########CPU 使用情况##########">>/home/cpu_$filename.txt
+top >>/home/cpu_$filename.txt
